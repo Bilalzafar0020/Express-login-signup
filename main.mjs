@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/apiv1", express.static(path.join(__dirname, './apiv1/login')))
 app.use("/apiv1/signup", express.static(path.join(__dirname, './apiv1/signup')))
 app.use("/apiv1/login", express.static(path.join(__dirname, './apiv1/login')))
-app.use("/apiv1/thread", express.static(path.join(__dirname, './apiv1/threads')))
+app.use("/apiv1/threads", express.static(path.join(__dirname, './apiv1/threads')))
 
 
 const PORT = process.env.PORT || 3001;
