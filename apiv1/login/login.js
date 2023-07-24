@@ -77,7 +77,7 @@ window.addEventListener('scroll', function () {
 
       if (userCredential.user.emailVerified) {
         // Redirect to second.html if email is verified
-        window.location.href = "../threads/Loader.html";
+        window.location.href = "/apiv1/threads/Loader.html";
       } else {
         showAlert('Please verify your email before logging in.')
       }
@@ -111,7 +111,7 @@ signInWithPopup(auth, provider)
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
-    window.location.href = '../threads/Loader.html';
+    window.location.href = '/apiv1/threads/Loader.html';
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
@@ -134,7 +134,7 @@ signInWithPopup(auth, provider)
          showAlert('You have logined before, dont need for again login')
 
          setTimeout(()=>{
-                  window.location.href = '../threads/Loader.html'; // ./third%20Page/third.html
+                  window.location.href = '/apiv1/threads/Loader.html'; // ./third%20Page/third.html
          },2000)
         
        

@@ -119,7 +119,7 @@ signInWithPopup(auth, provider)
     const user = result.user;
     // IdP data available using getAdditionalUserInfo(result)
     // ...
-    window.location.href = '../threads/Loader.html';
+    window.location.href = '/apiv1/threads/Loader.html';
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
